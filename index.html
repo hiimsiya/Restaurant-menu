@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restraunt menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgb(37, 36, 36);
+        width:100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    nav{
+        display:flex;
+    }
+
+    .logo img{
+        width: 95px;
+        background-color:transparent;
+
+    }
+.nav ul{
+    display:flex;
+    list-style:none;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(255, 208, 0);
+    width:90vw;
+    height: 50px;
+    font-size: larger;
+    font-weight: 600;
+    color: darkred;
+    margin-top: 20px;
+}
+
+.container{
+    width: 100vw;
+    height:70vh;
+    background-color:rgb(37, 36, 36) ;
+    background-position: center center;
+}
+
+.content{
+    font-size:4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:rgba(255, 124, 2, 0.918);
+    text-shadow:4px 4px 2px #941313;
+}
+.box{
+    background-color:transparent;
+    width: 80vw;
+    height: 30vh;
+    position: relative;
+    left:155px;
+    bottom: 490px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+hr{
+    margin:0 550px;
+    background-color:brown;
+}
+
+.box1{
+    margin-top: 90px;
+    width: 100vw;
+    height: 98vh;
+    background-color: rgb(37, 36, 36);
+}
+
+.box1 ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+ul li{
+    margin:100px 100px;
+    list-style: none;
+}
+
+
+.card{
+    background-color:cornsilk;
+    border:2px solid rgb(255, 153, 0);
+    width:14rem;
+    height:14rem;
+    border-top-left-radius:58px ;
+    border-top-right-radius:58px ;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px 0 5px;
+    box-shadow:8px 12px 6px gray;
+
+}
+
+.card img{
+    position: relative;
+    top: -100px;
+    width:200px
+}
+
+.name{
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+    height: 9rem;
+    position: relative;
+    bottom: 30px;
+}
+
+.card p{
+    position: relative;
+    bottom: 120px;
+    font-size: large;
+    text-align:justify;
+}
+
+.prize{
+    background-color:chocolate;
+    height: 3rem;
+    position: relative;
+    top:-90px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 2rem;
+}
+
+.box2{
+    width: 100vw;
+    height: 138vh;
+    background-color: rgb(37, 36, 36) ;
+    display: flex;
+    justify-content: center;
+  
+}
+.form{
+    border:1px solid rgb(189, 180, 180);
+    padding:40px 95px;
+    width:70vw;
+    height: 120vh;
+    background-color:rgb(236, 191, 148); 
+    border-radius: 55px;
+    font-size: 20px;
+    margin-top: 90px;
+
+}
+.heading{
+    text-align: center;
+    
+}
+.info{
+    color: rgb(212, 63, 63);
+}
+
+input[type="text"],input[type="email"],input[type="number"],textarea{
+    border-radius: 2px;
+    width:80%;
+    padding: 8px;
+    margin: 10px;;
+    border-color: rgb(253, 248, 248);
+}
+fieldset{
+    background-color:rgb(236, 191, 148);
+    border-radius: 2px;
+    border-color:rgb(241, 136, 15);
+}
+input[type="submit"],input[type="reset"]{
+background-color: rgb(20, 109, 211);
+color: white;
+padding:5px;
+width:40%;
+border-color:rgba(0, 153, 255, 0.897);
+height:35px;
+cursor:pointer;
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+background-color: rgb(79, 161, 255);
+border-color: rgb(79, 161, 255);
+}
+.button{
+    padding:20px;
+}
+
+footer{
+    width: 100vw;
+    height: 90px;
+    background-color: #941313;
+    color: azure;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+    <header id="header_img">
+        <nav>
+            <div class="logo"><img src="images/chef.png"  alt=""></div>
+            <div class="nav">
+                <ul>
+                    <li>Home</li>
+                    <li>Menu</li>
+                    <li>Order Form</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+   
+    <div class="content">
+        <h1><b>H</b>ungry point</h1>
+        <br>
+        <span><i class="fa-solid fa-burger"></i></span>
+        <span><h2>Food Menu</h2></span>
+        <span><i class="fa-solid fa-utensils"></i></span>
+        
+    </div>
+    <hr><hr>
+    <br><br>
+    <div class="box">
+        <img src="images/berger-removebg-preview.png" width="330" height="230" alt="berger">
+        <img src="images/pizza-removebg-preview.png" width="300" height="200" alt="pizza">
+    </div>
+ </div>
+
+    <main>
+        <div class="box1">
+            <ul>
+                <li>
+                    <div class="card">
+                        <img src="images/La_Rossa-removebg-preview.png" width="80" alt="">
+                        <p><b>La Rossa</b>  |  Tomato sauce, garlic, basil (no cheese)</p>
+                
+                    <div class="prize">
+                        $15 / $24
+                    </div>
+                </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="images/bosco-removebg-preview.png" width="80" alt="">
+                        <p><b>Bosco</b> | Tomato sauce, fresh mozzarella,cremini mushrooms</p>
+                
+                    <div class="prize">
+                        $17 / $25
+                    </div>
+                </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="images/Burratta-removebg-preview.png" width="80" alt="">
+                        <p><b>Burrata</b> | Tomato Sauce, burrata, garlic, basil         </p>
+                
+                    <div class="prize">
+                        $18 / $28
+                    </div>
+                </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="images/Margherita-removebg-preview.png" width="80" alt="">
+                        <p><b>Margherita</b> |Tomato sauce, fresh mozzarella, basil, sea salt, California extra virgin olive oil</p>
+                
+                    <div class="prize">
+                        $17 / $26
+                    </div>
+                </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="images/panna-removebg-preview.png" width="80" alt="">
+                        <p><b>Panna</b> |Tomato sauce, fresh mozzarella, grass-fed PA cow's cream, arugula, parmigiano</p>
+                
+                    <div class="prize">
+                       $18 / $28
+                    </div>
+                </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="images/burger1-removebg-preview.png" width="80" alt="">
+                        <p><b>Hamburger</b> |Single or Double Choice of lettuce, tomato, pickle or onion. Add cheese or all-natural applewood smoked bacon.</p>
+                
+                    <div class="prize">
+                       $18
+                    </div>
+                </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="images/berger2-removebg-preview.png" width="80" alt="">
+                        <p><b>Cheeseburger</b> |Cheeseburger and a Shroom Burger topped with lettuce, tomato     </p>
+                
+                    <div class="prize">
+                        $19
+                    </div>
+                </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="images/salad-removebg-preview.png" width="80" alt="">
+                        <p><b>Brussels Sprouts Salad</b> | Thin sliced Brussels sprouts, avocado & Parmigiano Reggiano, fresh lemon, salt & pepper</p>
+                
+                    <div class="prize">
+                        $19
+                    </div>
+                </div>
+                </li>
+               
+            </ul>
+           
+        </div>
+
+        <div class="box2">
+            <div class="form">
+                    <form>
+                    <h1 class="heading">Place Your Order</h1>
+                    <hr>
+                    <p class="info"><small>Required fields are followed by *</small></p>
+                <label for="name">
+                    <p>Name :*<input type="text" name="name" id="name" placeholder="Enter your name" required></p>
+                </label>
+                <label for="address">
+                    <p class="address">
+                        Address :<textarea cols="30" rows="5" id="address" placeholder="Enter your address"></textarea>
+                    </p>
+                </label>
+                <br>
+                 <label for="email"> 
+                      <p>
+                        E-mail :*<input type="email" name="email" id="email">
+                    </p>
+                </label>
+                <br>
+                <label for="number">Enter number of items you want to order 
+                    <input type="number" min="0" max="10" id="number">
+                </label>
+                <br><br>
+                <p>Select dishes you want to order</p>
+                    <br>
+                   <label for="1"> <input type="checkbox" id="1" value="label" > La Rossa <br></label>
+                   <label for="2"> <input type="checkbox" id="2" value="bosco" > Bosco <br></label>
+                   <label for="3"> <input type="checkbox" id="3" value="burrata" > Burrata <br></label>
+                   <label for="4"> <input type="checkbox" id="4" value="margherita" > Margherita <br></label>
+                   <label for="5"> <input type="checkbox" id="5" value="panna" > Panna <br></label>
+                   <label for="6"> <input type="checkbox" id="6" value="hamburger" > Hamburger <br></label>
+                   <label for="7"> <input type="checkbox" id="7" value="cheeseburger" > Cheeseburger <br></label>
+                   <label for="8"> <input type="checkbox" id="8" value="brussels-sprouts-salad" > Brussels Sprouts Salad <br></label>
+                    
+                </label>
+                <br>
+                <fieldset>
+                    <legend>Payment Method</legend>
+                    <br>
+                    <label for="cash"><input type="radio" name="payment" id="cash" value="cash-on-delivery" > Cash-on-delivery</label>
+                    <label for="upi"><input type="radio" name="payment" id="upi" value="upi" > UPI</label>
+                </fieldset>
+                 <br>
+                    <p class="button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </p>
+                </form>
+        </div>
+    </main>
+    <footer>
+        <p>Made with love by 2336090000365065</p>
+    </footer>
+    
+</body>
+</html>
